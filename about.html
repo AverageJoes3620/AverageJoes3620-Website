@@ -19,30 +19,34 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
     <style>
-    ul.squaredots {
-      list-style-type:square;
-    }
-      /* Navbar */  
-  ul.navbar {
+  ul.squaredots {
+    list-style-type:square;
+  }
+/* Navbar */  
+ul.nav {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    width: 200px;
-    background-color: #f1f1f1;
+    overflow: hidden;
+    border: 1px solid #e7e7e7;
+    background-color: #f3f3f3;
 }
-li a.nav-item {
+li {
+    float: left;
+}
+li a.nav-link {
     display: block;
-    color: #000;
-    padding: 8px 0 8px 16px;
+    color: #666;
+    text-align: center;
+    padding: 14px 16px;
     text-decoration: none;
 }
-li a.active {
-    background-color: #4CAF50;
-    color: white;
-}
 li a:hover:not(.active) {
-    background-color: #555;
+    background-color: #ddd;
+}
+li a.active {
     color: white;
+    background-color: #4CAF50;
 }
     </style>
   </head>
