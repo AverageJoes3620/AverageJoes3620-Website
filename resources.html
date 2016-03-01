@@ -13,7 +13,7 @@
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
 <style>
-ul {
+ul.navbar {
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -21,20 +21,20 @@ ul {
     border: 1px solid #e7e7e7;
     background-color: #f3f3f3;
 }
-li {
+li.nav {
     float: left;
 }
-li a {
+li.nav a {
     display: block;
     color: #666;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
 }
-li a:hover:not(.active) {
+li.nav a:hover:not(.active) {
     background-color: #ddd;
 }
-li a.active {
+li.nav a.active {
     color: white;
     background-color: #4CAF50;
 }
@@ -50,20 +50,20 @@ li a.active {
     <div class="container">
     <div class="row">
         <div class="col-md-12">
-        <ul class="nav navbar-nav">
-            <li class="nav-item">
+        <ul class="nav navbar-nav" class="navbar">
+            <li class="nav-item" class="nav">
                 <a class="navbar-brand" href="index.html">Average Joes</a>
             </li>
-            <li class="nav-item active">
+            <li class="nav-item active" class="nav">
                 <a class="nav-link" href="index.html">Home<span class="sr-only">(current)</span></a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item" class="nav">
                 <a class="nav-link" href="about.html">About</a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item" class="nav">
                 <a class="nav-link" href="sponsors.html">Sponsors</a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item" class="nav">
                 <a class="nav-link" href="resources.html">Resources</a>
             </li>
         </ul>
