@@ -120,7 +120,26 @@ setInterval(function () {
 }
   }
 /* Navbar */  
-
+body {
+  margin: 0;
+  padding: 0;
+  background: #ccc;
+}
+ 
+.nav ul {
+  list-style: none;
+  background-color: #444;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
+.nav li {
+  font-family: 'Oswald', sans-serif;
+  font-size: 1.2em;
+  line-height: 40px;
+  height: 40px;
+  border-bottom: 1px solid #888;
+}
   </style>
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -129,17 +148,18 @@ setInterval(function () {
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
   </head>
-  <body>
-<nav>
-    <div class="nav-wrapper">
-      <a href="#" class="brand-logo">Logo</a>
-      <ul id="nav-mobile" class="right hide-on-med-and-down">
-        <li><a href="sass.html">Sass</a></li>
-        <li><a href="badges.html">Components</a></li>
-        <li><a href="collapsible.html">JavaScript</a></li>
+<body class="news">
+  <header>
+    <div class="nav">
+      <ul>
+        <li class="home"><a href="#">Home</a></li>
+        <li class="tutorials"><a class="active" href="#">Tutorials</a></li>
+        <li class="about"><a href="#">About</a></li>
+        <li class="news"><a href="#">Newsletter</a></li>
+        <li class="contact"><a href="#">Contact</a></li>
       </ul>
     </div>
-  </nav>
+  </header>
   
   
     <h1>Welcome!</h1>
